@@ -10,6 +10,7 @@
 use std::num::NonZeroUsize;
 
 /// Get the default number of threads to use, if not explicitly specified.
+#[inline]
 fn default_num_threads() -> NonZeroUsize {
     // If we can't get the amount of parallelism for some reason, then
     // default to a single thread, because that is safe.
